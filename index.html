@@ -201,3 +201,12 @@
         } else {
             status.className = 'result-status error';
             status.innerText = '❌ Ошибка!';
+            details.innerText = currentItem.info_text;
+            nextBtn.style.background = '#ff4b4b';
+            nextBtn.style.borderBottom = '4px solid #ea2b2b';
+            }
+        }
+    function nextQuestion() {
+        initQuestion();
+        }
+    loadDishes();
